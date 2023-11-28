@@ -18,7 +18,10 @@
                         <small>Author</small>
                     </h1>
 
+
                     <?php
+
+
 
                     if (isset($_GET['source'])) {
                         $source = $_GET['source'];
@@ -32,12 +35,12 @@
                             include "includes/add_post.php";
                             break;
 
-                        case '';
-                            echo "";
+                        case 'edit_post';
+                            include "includes/edit_post.php";
                             break;
 
-                        case '';
-                            echo "";
+                        case '70';
+                            echo "ggf";
                             break;
 
                         default;
